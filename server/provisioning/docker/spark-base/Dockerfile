@@ -17,7 +17,7 @@ ENV SCALA_HOME /opt/scala-2.10.4
 ENV SPARK_EXECUTOR_MEMORY 1500m
 ENV SPARK_DRIVER_MEMORY 1500m
 ENV SPARK_WORKER_MEMORY 1500m
-ENV SPARK_WORKER_OPTS "-Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=300 -Dspark.worker.cleanup.appDataTtl=300" $SPARK_WORKER_OPTS
+ENV SPARK_WORKER_OPTS -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.interval=300 -Dspark.worker.cleanup.appDataTtl=300
 ENV SPARK_MASTER_MEM 1500m
 ENV HADOOP_HOME "/etc/hadoop"
 ENV SPARK_LOCAL_DIR /tmp/spark
