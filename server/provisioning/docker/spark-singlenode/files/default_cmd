@@ -30,8 +30,8 @@ echo "starting Spark Worker at $LOCAL_IP"
 nohup ${SPARK_HOME}/bin/spark-class org.apache.spark.deploy.worker.Worker spark://$LOCAL_IP:$LOCAL_PORT -h $LOCAL_IP < /dev/null 2>&1 > /dev/null &
 echo "worker started"
 
-echo "starting driver from $1"
-nohup java -jar $1 &
+echo "starting driver $2 with classpath $1"
+nohup java -jar $1 $2 &
 
 while [ 1 ];
 do
