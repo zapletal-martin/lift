@@ -7,7 +7,7 @@ echo "preparing Spark"
 # This is now unfortunately required, because shell needs to be executed in special scope to be able to update env vars
 sed -i s/__SPARK_LOCAL_IP__/$IP/ /opt/spark-$SPARK_VERSION/conf/spark-env.sh
 sed -i s/__MASTER__/$SPARKMASTER_PORT_7077_TCP_ADDR/ /opt/spark-$SPARK_VERSION/conf/spark-env.sh
-. /opt/spark-1.2.0/conf/spark-env.sh
+. /opt/spark-1.3.0/conf/spark-env.sh
 
 env
 

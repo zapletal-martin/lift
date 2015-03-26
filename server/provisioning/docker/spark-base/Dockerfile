@@ -1,4 +1,4 @@
-# Spark 1.2.0
+# Spark 1.3.0
 # Version 1.0.0
 #
 FROM sequenceiq/hadoop-docker:2.6.0
@@ -7,7 +7,7 @@ FROM sequenceiq/hadoop-docker:2.6.0
 ADD files /root/spark_files
 
 ENV SCALA_VERSION 2.10.4
-ENV SPARK_VERSION 1.2.0
+ENV SPARK_VERSION 1.3.0
 ENV SCALA_HOME /opt/scala-$SCALA_VERSION
 ENV SPARK_HOME /opt/spark-$SPARK_VERSION
 ENV PATH $SPARK_HOME:$SCALA_HOME/bin:$PATH
