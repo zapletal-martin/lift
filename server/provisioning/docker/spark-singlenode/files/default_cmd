@@ -31,7 +31,7 @@ nohup ${SPARK_HOME}/bin/spark-class org.apache.spark.deploy.worker.Worker spark:
 echo "worker started"
 
 echo "starting driver $2 with classpath $1"
-nohup java -cp $1 $2 &
+nohup java -cp "$1" "$2" &
 
 while [ 1 ];
 do
